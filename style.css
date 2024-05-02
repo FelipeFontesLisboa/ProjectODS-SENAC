@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  background-position: 50% 50%;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  list-style: none;
+  text-decoration: none;
+}
+
+.Fontcell {
+  color: rgb(254, 246, 90);
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 15%;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(#448d4a, #ededf1);
+  box-shadow: 1px 20px 8px rgba(255, 255, 255, 0.664); /*sombra da box da imagem*/
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  margin: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  color: rgb(82, 105, 38);
+  border: solid rgb(255, 255, 255) 1px;
+  padding: 8px;
+  box-shadow: 1px 5px 7px rgba(139, 139, 139, 0.733); /*sombra da box da imagem*/
+  /* background: transparent;
+    backdrop-filter: blur(15px); */
+  border-radius: 30px;
+  font-size: 30px;
+  font-weight: bolder;
+  transition: 0.5s;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+li:hover {
+  color: rgb(255, 255, 255);
+}
+
+#logo {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  border-radius: ;
+}
+
+#banner {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./assets/baner1.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  box-shadow: 10px 5px 37px #f0eeee; /* BOTTON */
+}
+.titleDivider {
+  width: 100vw;
+  height: auto;
+  background-color: #3b8bc0;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  -webkit-box-shadow: 5px 5px 37px 17px #fcf8f8; /* TOP */
+  box-shadow: 10px 5px px #ffffff; /* BOTTON */
+}
+#divider {
+  width: 100vw;
+  height: 540px;
+  background-image: url(./assets/cuidados-com-a-saude.webp);
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  /* -webkit-box-shadow: 5px 5px 37px 17px #000000; 
+  box-shadow: 5px 5px 37px 17px #000000; */
+}
+
+#trailer-container {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#97ce6c, #ededf1);
+  box-shadow: 1px 20px 8px rgba(255, 255, 255, 0.664); /*sombra da box da imagem*/
+}
+
+.content {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trailer {
+  width: 100%;
+  height: 410px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 37px 17px #ffffff;
+}
+
+#sinopse {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+.descrition {
+  color: #17699fe5;
+  font-size: 19px;
+  font-weight: 900;
+  font-family: sans-serif, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 100%;
+}
+
+.button {
+  color: rgb(82, 105, 38);
+  border: solid rgb(255, 255, 255) 1px;
+  padding: 8px;
+  box-shadow: 1px 5px 7px rgba(139, 139, 139, 0.733); /*sombra da box da imagem*/
+  background: transparent;
+  backdrop-filter: blur(30px);
+  width: 180px;
+  height: 50px;
+  margin-left: 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+
+  outline: none;
+  margin-top: 60px;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: rgb(82, 105, 38);
+}
+
+.card-cotainer {
+  width: 100vw;
+  height: 100%;
+  background: linear-gradient(#ededf1, #ffffff);
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card-contant {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 20px;
+  column-gap: 40px;
+}
+
+.card {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: 50% 50%;
+  border: solid #17699f63;
+  -webkit-box-shadow: 5px 2px 10px 5px #a19f9f; /* TOP */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 20px 10px;
+  color: #ffffff;
+  font-size: 17px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.banner1 {
+  background-image: url(./assets/cardeExplicativoDengue.jpeg);
+}
+
+.banner2 {
+  background-image: url(./assets/Bem-estar.png);
+}
+
+.banner3 {
+  background-image: url(./assets/saudeParaTodos.png);
+}
+
+.banner4 {
+  background-image: url(./assets/cardSaude.png);
+}
+
+footer {
+  background: linear-gradient(#ffffffe1, #4f9254);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  position: relative;
+  z-index: -1;
+}
+
+span {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.NavMobile {
+  display: none;
+  width: auto;
+  height: auto;
+}
+
+.ListMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .NavMobile {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  li {
+    border: solid 1px;
+    border-radius: 5px;
+    margin: 2px;
+  }
+
+  .topo {
+    display: none;
+  }
+
+  #banner {
+    background-position: 50%;
+  }
+
+  #trailer-container {
+    width: 105%;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trailer {
+    width: 100%;
+  }
+
+  #sinopse {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .descrition {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .card-contant {
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+  }
+}
