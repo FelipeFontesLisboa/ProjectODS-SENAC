@@ -16,6 +16,7 @@ body {
   text-decoration: none;
 }
 
+
 .Fontcell {
   color: rgb(254, 246, 90);
   cursor: pointer;
@@ -80,7 +81,7 @@ li:hover {
   cursor: pointer;
 }
 .logoMobile {
-  display:none;
+  display: none;
 }
 
 #banner {
@@ -186,6 +187,7 @@ li:hover {
   flex-direction: column;
   justify-content: space-between;
   margin-left: 30px;
+  cursor: pointer;
 }
 
 .descrition {
@@ -331,9 +333,9 @@ footer {
     justify-content: center;
     align-items: center;
   }
-header{
-  display: none;
-}
+  header {
+    display: none;
+  }
   nav {
     display: none;
   }
