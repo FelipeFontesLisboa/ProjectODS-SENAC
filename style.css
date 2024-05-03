@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #dfdddd;
   background-position: 50% 50%;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -29,7 +29,7 @@ body {
 
 header {
   width: 100%;
-  height: 90px;
+  height: 110px;
   display: flex;
   position: absolute;
   z-index: 1;
@@ -58,12 +58,11 @@ ul {
 
 li {
   list-style: none;
-  color: rgb(82, 105, 38);
+  color: rgba(255, 255, 255, 0.651);
   border: solid rgb(255, 255, 255) 1px;
   padding: 8px;
   box-shadow: 1px 5px 7px rgba(139, 139, 139, 0.733); /*sombra da box da imagem*/
-  /* background: transparent;
-    backdrop-filter: blur(15px); */
+  text-shadow: 5px 4px 4px #7070706e;
   border-radius: 30px;
   font-size: 30px;
   font-weight: bolder;
@@ -76,29 +75,72 @@ li:hover {
 }
 
 #logo {
-  width: 150px;
+  width: 200px;
   height: auto;
   cursor: pointer;
-  border-radius: ;
+}
+.logoMobile {
+  display:none;
 }
 
 #banner {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
   background-image: url(./assets/baner1.jpg);
   background-position: 50% 50%;
   background-size: cover;
   box-shadow: 10px 5px 37px #f0eeee; /* BOTTON */
 }
+.titleMobile {
+  display: none;
+}
+.title1 {
+  color: #fff;
+  height: 450px;
+  padding-top: px;
+  padding-right: 20px;
+  font-size: 500px;
+  text-shadow: 2px 2px 15px #2e2d2d;
+}
+.title3 {
+  color: #fff;
+  padding-top: 60px;
+  font-size: 65px;
+  font-weight: bold;
+  text-shadow: 2px 2px 15px #2e2d2d;
+}
+.title2 {
+  color: #fff;
+  font-weight: 600;
+  padding-top: 60px;
+  font-size: 40px;
+  padding-bottom: px;
+  text-shadow: 2px 2px 15px #2e2d2d;
+}
+
+.title4 {
+  padding-top: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 2px 2px 15px #2e2d2d;
+}
+.titleMobile {
+  display: none;
+}
+
 .titleDivider {
-  width: 100vw;
-  height: auto;
+  width: 100%;
+  height: 150px;
   background-color: #3b8bc0;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.856);
   display: flex;
-  justify-content: center;
+  text-shadow: 2px 2px 5px #c5c5c5;
   align-items: center;
-  font-size: 80px;
+  font-size: 90px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   -webkit-box-shadow: 5px 5px 37px 17px #fcf8f8; /* TOP */
   box-shadow: 10px 5px px #ffffff; /* BOTTON */
@@ -147,18 +189,19 @@ li:hover {
 }
 
 .descrition {
-  color: #17699fe5;
+  color: #17699fb7;
   font-size: 19px;
   font-weight: 900;
   font-family: sans-serif, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-shadow: 5px 4px 4px #7070706e;
   width: 100%;
 }
 
 .button {
-  color: rgb(82, 105, 38);
+  color: rgba(82, 105, 38, 0.589);
   border: solid rgb(255, 255, 255) 1px;
   padding: 8px;
-  box-shadow: 1px 5px 7px rgba(139, 139, 139, 0.733); /*sombra da box da imagem*/
+  box-shadow: 1px 5px 7px rgba(155, 154, 154, 0.733); /*sombra da box da imagem*/
   background: transparent;
   backdrop-filter: blur(30px);
   width: 180px;
@@ -172,7 +215,8 @@ li:hover {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-
+  text-shadow: 5px 4px 4px #7070706e;
+  list-style: none;
   outline: none;
   margin-top: 60px;
 }
@@ -188,9 +232,17 @@ li:hover {
   background: linear-gradient(#ededf1, #ffffff);
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  padding-top: 80px;
 }
-
+.infoCard {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background: transparent;
+  backdrop-filter: blur(4px);
+  padding: 5px;
+  border-radius: 5px;
+  text-shadow: 2px 2px 15px #000000;
+}
 .card-contant {
   width: 95%;
   display: grid;
@@ -212,8 +264,7 @@ li:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0 0 20px 10px;
-  color: #ffffff;
+  color: #000000;
   font-size: 17px;
   font-family: "Kdam Thmor Pro", sans-serif;
 }
@@ -249,9 +300,15 @@ footer {
   z-index: -1;
 }
 
-span {
-  color: #fff;
+.foterScript {
+  color: #ffffffd5;
   margin-top: 10px;
+  font-weight: 700;
+  box-shadow: 2px 2px 8px 10px #ffffff70;
+  text-shadow: 5px 4px 4px #7070706e;
+  font-size: 19px;
+  border-radius: 30px;
+  margin-bottom: 20px;
 }
 
 .NavMobile {
@@ -269,21 +326,22 @@ span {
 
 @media (max-width: 768px) {
   .NavMobile {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
   }
-
+header{
+  display: none;
+}
   nav {
     display: none;
   }
 
   li {
     border: solid 1px;
-    border-radius: 5px;
+    border-radius: 30px;
     margin: 2px;
-  }
-
-  .topo {
-    display: none;
   }
 
   #banner {
@@ -311,20 +369,81 @@ span {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 5px 0 5px;
   }
 
   .descrition {
     width: 100%;
+    font-size: 18px;
+    padding: 20px 0 20px 0;
   }
 
   .button {
-    width: 100%;
-    margin-top: 5%;
+    width: 250px;
+    margin-top: 10%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
   }
 
   .card-contant {
     grid-template-columns: 1fr;
     margin-top: 10px;
+  }
+  .card-cotainer {
+    margin: 0 0 0 0;
+    padding: 100px 0 10px 0;
+  }
+
+  #banner {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./assets/baner1.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    box-shadow: 10px 5px 37px #f0eeee; /* BOTTON */
+  }
+  .title1 {
+    height: 350px;
+    padding-right: 5px;
+    font-size: 400px;
+    text-shadow: 2px 2px 15px #2e2d2d;
+  }
+  .titleMobile {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 15px #2e2d2d;
+  }
+  .title3 {
+    padding-top: 20px;
+    font-size: 38px;
+    font-weight: bold;
+    text-shadow: 2px 2px 15px #130a0a;
+  }
+  .title4 {
+    display: none;
+    padding-top: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 15px #2e2d2d;
+  }
+  .title2 {
+    font-weight: 600;
+    padding-top: 20px;
+    font-size: 30px;
+    padding-bottom: px;
+    text-shadow: 2px 2px 15px #2e2d2d;
+  }
+  .titleDivider {
+    height: 80px;
+    font-size: 50px;
   }
 }
