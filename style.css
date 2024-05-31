@@ -439,6 +439,7 @@ footer {
     padding-right: 5px;
     font-size: 400px;
     text-shadow: 2px 2px 15px #2e2d2d;
+    display: none;
   }
   .titleMobile {
     font-size: 50px;
@@ -452,12 +453,20 @@ footer {
     text-shadow: 2px 2px 15px #130a0a;
   }
   .title4 {
-    display:;
     padding-top: 10px;
     font-size: 50px;
     font-weight: bold;
     text-shadow: 2px 2px 15px #2e2d2d;
   }
+  .title4::before{
+    content: "3° ";
+  }
+
+  .js-accordion dt::after{ /* quero por no after no final a cetinha*/
+    content: '⤴';
+}
+
+
   .title2 {
     font-weight: 600;
     padding-top: 5px;
