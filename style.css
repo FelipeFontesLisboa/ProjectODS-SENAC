@@ -34,7 +34,7 @@ header {
   position: absolute;
   z-index: 1;
   background: linear-gradient(#448d4a, #ededf1);
-  box-shadow: 1px 20px 8px rgba(255, 255, 255, 0.664); /*sombra da box da imagem*/
+  box-shadow: 1px 15px 5px rgba(255, 255, 255, 0.623); /*sombra da box da imagem*/
   justify-content: space-between;
   align-items: center;
   animation: showHeader 0.9s forwards;
