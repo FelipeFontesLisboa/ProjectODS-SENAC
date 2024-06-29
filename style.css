@@ -29,12 +29,12 @@ body {
 
 header {
   width: 100%;
-  height: 110px;
+  height: 130px;
   display: flex;
   position: absolute;
   z-index: 1;
-  background: linear-gradient(#448d4a, #ededf1);
-  box-shadow: 1px 15px 5px rgba(255, 255, 255, 0.623); /*sombra da box da imagem*/
+  background: linear-gradient(#8dc463, #e0dbd9);
+  /* box-shadow: 1px 15px 5px rgba(255, 255, 255, 0.623); sombra da box da imagem */
   justify-content: space-between;
   align-items: center;
   animation: showHeader 0.9s forwards;
@@ -309,7 +309,7 @@ li:hover {
 }
 
 footer {
-  background: linear-gradient(#ffffffe1, #4f9254);
+  background: linear-gradient(#ffffffe1, #8dc463);
   height: auto;
   display: flex;
   flex-direction: column;
@@ -323,10 +323,10 @@ footer {
   color: #ffffffd5;
   margin-top: 10px;
   font-weight: 700;
-  box-shadow: 2px 2px 8px 10px #ffffff70;
+  box-shadow: 2px 2px 8px 8px #ffffff70;
   text-shadow: 5px 4px 4px #7070706e;
   font-size: 19px;
-  border-radius: 30px;
+  border-radius: 25px;
   margin-bottom: 20px;
 }
 
